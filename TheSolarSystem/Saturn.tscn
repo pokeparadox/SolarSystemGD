@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UniversalBodies/Planet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UniversalBodies/Moon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Shapes/Ring.tscn" type="PackedScene" id=3]
+
+[node name="Saturn" instance=ExtResource( 1 )]
+Radius = 10.0
+Colour = Color( 0.713726, 0.388235, 0.00392157, 1 )
+Name = "Saturn"
+
+[node name="Ring" parent="Planet" index="0" instance=ExtResource( 3 )]
+visible = false
+Radius = 30.0
+Thickness = 0.001
+
+[node name="Enceladus" parent="Planet" index="1" instance=ExtResource( 2 )]
+Radius = 1.0
+Colour = Color( 0.6, 0.556863, 0.556863, 1 )
+Name = "Phobos"
+OrbitalVelocity = 500.0
+OrbitalDistance = 5.0
+
+[node name="Titan" parent="Planet" index="2" instance=ExtResource( 2 )]
+Radius = 1.0
+Colour = Color( 0.658824, 0.658824, 0.6, 1 )
+Name = "Deimos"
+OrbitalVelocity = 400.0
+OrbitalDistance = 6.0

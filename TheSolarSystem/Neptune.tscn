@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UniversalBodies/Planet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UniversalBodies/Moon.tscn" type="PackedScene" id=2]
+
+[node name="Mars" instance=ExtResource( 1 )]
+Radius = 17.0
+Colour = Color( 0.713726, 0.00392157, 0.00392157, 1 )
+Name = "Mars"
+
+[node name="Phobos" parent="Planet" index="0" instance=ExtResource( 2 )]
+Radius = 1.0
+Colour = Color( 0.6, 0.556863, 0.556863, 1 )
+Name = "Phobos"
+OrbitalVelocity = 500.0
+OrbitalDistance = 3.0
+
+[node name="Deimos" parent="Planet" index="1" instance=ExtResource( 2 )]
+Radius = 1.0
+Colour = Color( 0.658824, 0.658824, 0.6, 1 )
+Name = "Deimos"
+OrbitalVelocity = 400.0
+OrbitalDistance = 6.0

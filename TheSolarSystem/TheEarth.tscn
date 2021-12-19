@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UniversalBodies/Planet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UniversalBodies/Moon.tscn" type="PackedScene" id=2]
+
+[node name="TheEarth" instance=ExtResource( 1 )]
+Radius = 15.0
+Colour = Color( 0, 0.415686, 0.901961, 1 )
+Name = "Earth"
+
+[node name="Moon" parent="Planet" index="0" instance=ExtResource( 2 )]
+Radius = 2.0
+Colour = Color( 0.705882, 0.686275, 0.686275, 1 )
+Name = "The Moon"
+OrbitalVelocity = 400.0
+OrbitalDistance = 4.0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://TheSolarSystem/TheSun.gd" type="Script" id=2]
+
+[node name="TheSun" type="Node2D"]
+script = ExtResource( 2 )
+Radius = 30.0
+Colour = Color( 0.917647, 0.882353, 0.054902, 1 )
+Name = "The Sun"
