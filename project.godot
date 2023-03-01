@@ -6,55 +6,21 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "Node2D",
-"class": "Circle",
-"language": "GDScript",
-"path": "res://Shapes/Circle.gd"
-}, {
-"base": "Node2D",
-"class": "Moon",
-"language": "GDScript",
-"path": "res://UniversalBodies/Moon.gd"
-}, {
-"base": "Node2D",
-"class": "Planet",
-"language": "GDScript",
-"path": "res://UniversalBodies/Planet.gd"
-}, {
-"base": "Node2D",
-"class": "Ring",
-"language": "GDScript",
-"path": "res://Shapes/Ring.gd"
-}, {
-"base": "Node2D",
-"class": "Sun",
-"language": "GDScript",
-"path": "res://UniversalBodies/Sun.gd"
-} ]
-_global_script_class_icons={
-"Circle": "",
-"Moon": "",
-"Planet": "",
-"Ring": "",
-"Sun": ""
-}
+config_version=5
 
 [application]
 
 config/name="Planets"
 run/main_scene="res://TheSolarSystem/TheSolarSystem.tscn"
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
-window/vsync/vsync_via_compositor=true
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/stretch/mode="viewport"
-window/stretch/aspect="keep"
+window/vsync/vsync_via_compositor=true
 
 [physics]
 
@@ -62,8 +28,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
-vram_compression/import_etc2=false
-environment/default_clear_color=Color( 0, 0, 0, 1 )
-environment/default_environment="res://default_env.tres"

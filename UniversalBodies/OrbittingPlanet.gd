@@ -1,10 +1,10 @@
 extends Node2D
 
-export var Radius : float setget setRadius, getRadius
-export var Colour : Color setget setColour, getColour
-export var Name : String setget setName, getName
-export var OrbitalVelocity : float
-export var OrbitalDistance : float setget setOrbitalDistance, getOrbitalDistance
+@export var Radius : float : get = getRadius, set = setRadius
+@export var Colour : Color : get = getColour, set = setColour
+@export var Name : String : get = getName, set = setName
+@export var OrbitalVelocity : float
+@export var OrbitalDistance : float : get = getOrbitalDistance, set = setOrbitalDistance
 
 
 func _physics_process(delta: float) -> void:
