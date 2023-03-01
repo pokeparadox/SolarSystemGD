@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://juryfnq8vflj"]
+[gd_scene load_steps=9 format=3 uid="uid://juryfnq8vflj"]
 
 [ext_resource type="PackedScene" path="res://TheSolarSystem/TheSun.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://UniversalBodies/Planet.tscn" id="2"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" path="res://TheSolarSystem/Saturn.tscn" id="5"]
 [ext_resource type="PackedScene" path="res://TheSolarSystem/Jupiter.tscn" id="6"]
 [ext_resource type="PackedScene" path="res://TheSolarSystem/Uranus.tscn" id="7"]
+[ext_resource type="AudioStream" uid="uid://dvskymanhpcib" path="res://Starzzz.ogg" id="8_gdful"]
 
 [node name="TheSolarSystem" type="Node2D"]
 position = Vector2(640, 360)
@@ -51,3 +52,7 @@ Radius = 15.0
 Colour = Color(0.0431373, 0.639216, 0.8, 1)
 OrbitalVelocity = 100.0
 OrbitalDistance = 100.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_gdful")
+autoplay = true
